@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayInfoWord">
+
+    <TextView
+        android:id="@+id/mot"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Mot"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="188dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="56dp"
+        android:text="Def"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mot"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgWorld"
+        android:layout_width="140dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPlayAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:text="Play / Pause"
+        app:layout_constraintTop_toBottomOf="@+id/imgWorld"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="239dp" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="193dp"
+        android:layout_height="199dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayAudio"
+        app:layout_constraintVertical_bias="0.519"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="98dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Prononciation"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlayAudio"
+        app:layout_constraintTop_toBottomOf="@+id/imgWorld"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="247dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
